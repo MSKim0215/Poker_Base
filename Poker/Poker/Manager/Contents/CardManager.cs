@@ -681,6 +681,7 @@ namespace Poker.Manager.Contents
                 {
                     isCheck = false;
                     count = 0;
+                    set.Clear();
                 }
             }
             return null;
@@ -789,6 +790,8 @@ namespace Poker.Manager.Contents
                 if (numbers[i] == numbers[i + 1])
                 {
                     set.Add(numbers[i]);
+                    set.Add(numbers[i + 1]);
+                    break;
                 }
             }
             return set;
