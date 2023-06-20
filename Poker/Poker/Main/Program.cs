@@ -1,0 +1,17 @@
+﻿using Poker.Manager;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Poker
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Managers.Instance.Start();
+        }
+    }
+}
